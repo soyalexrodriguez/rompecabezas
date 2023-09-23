@@ -1,0 +1,22 @@
+/* change this to increase/decrease puzzle size*/
+:root {
+    --size: 500px;
+}
+@media (max-width: 360px) {
+    /* … */
+    :root {
+        --size: 280px;
+    }
+}
+@media (min-width: 361px) and (max-width: 394px) {
+    /* … */
+    :root {
+        --size: 350px;
+    }
+}
+@media (min-width: 400px) {
+    /* … */
+    :root {
+        --size: 400px;
+    }
+}

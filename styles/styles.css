@@ -1,0 +1,123 @@
+@import 'variables.css';
+@import 'Tile.css';
+@import 'Puzzle.css';
+@import 'FinalScreen.css';
+@import 'UserStats.css';
+@import 'utils/util-display.css';
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+
+    background: #3d3c3c;
+    font-family: monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type=button] {
+    background-color: #4ab34def; /* Green */
+    border: 1px solid white;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+input[type=button]:active {
+    background-color: rgb(23, 214, 198);
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(2, 178, 201);
+    -webkit-transition-duration: 0.1s; /* Safari */
+    -webkit-transition-timing-function: linear;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    padding-left: 23px;
+    margin: 4px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #27d42def;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+ /* .container input:checked ~ .checkmark:after {
+   
+  }*/
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+      border-radius: 50%;
+      background: white;
+      opacity: 0;
+  }
+  .active{
+    color: #27d42def;
+  }
+
+@media (min-width: 400px) {
+    /* … */
+    input[type=button]{
+        font-size: 24px;
+    }
+    #contentBtn{
+      padding-bottom: 15px;
+    }
+}
+@media (max-width: 360px) {
+    /* … */
+    .container{
+      margin-top: 10px;
+    }
+}
+@media (min-width: 361px) and (max-width: 394px) {
+    /* … */
+    .container{
+      margin-top: 15px;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="Es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/styles.css" rel="stylesheet">
+        <title>Pet's puzzle by Alex Rodriguez</title>
+        <meta property="og:title" content="Arma tu mascota! HTML/CSS/JS conectado a una ApiRest-Alex Rodriguez 👨‍💻" />
+        <meta property="og:description" content="🐶😸 Juego de rompecabezas, consumiendo imagenes de una ApiRest gratutita para crear variedad de rompecabezas"/>
+        <meta property="og:image" content="reemplazar imagen" />
+        <meta property="og:image:secure_url" content="https://soyalexrodriguez.github.io/rompecabezas/" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="263" />
+        <meta property="og:image:alt" content="Proyecto de rompecabezas para conectar una apirest y consumir la variedad de imagenes que hay de perros y gatos" />
+    </head>
+    <body>
+        <h1>Pet's Puzzle</h1>
+        <div class="u-flex">
+            <div class="UserStats">
+                <p>
+                    Puntos: <span>0</span> | 
+                    Tiempo: <span>00:00:00</span> | 
+                    Movimientos: <span>0</span>
+                </p>
+            </div>
+            <div id="puzzle" class="Puzzle">
+                <img  alt="Puzzle result" class="Puzzle-placeholder">
+            </div>
+            <div id="contentSettings">
+                <div id="contentLevel">
+                    <h3>Niveles</h3>
+                    <label class="container active">No tuve infancia
+                        <input type="radio"  name="radio" value="3" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Medio que quería
+                        <input type="radio" name="radio" value="5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Fuí feliz de niño
+                        <input type="radio" name="radio" value="7">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div id="contentBtn">
+                    <h3>Más mascotas</h3>
+                    <input type="button" id="btnOtherDog" value="🐶" readonly/>
+                    <input type="button" id="btnOtherCat" value="😸" readonly/>
+                </div>
+            </div>
+            
+        </div>
+        <section class="FinalScreen">
+            <img src="https://media2.giphy.com/media/eoxomXXVL2S0E/giphy.gif" alt="Congratulations">
+            <h1>Excelente juego, estas on fire 🔥🎉🎈!</h1>
+            <p>
+                Puntos: <span>80/100</span><br> 
+                Tiempo: <span>00:10:20</span><br> 
+                Movimientos: <span>125</span>
+            </p>
+            <div>
+                <button id="resetGame">Volver a jugar 📲</button>
+            </div>
+        </section>
+        <script src="js/app.js"></script>
+        <script src="js/ui-helper.js"></script>
+    </body>
+</html>
